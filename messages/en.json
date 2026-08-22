@@ -1,0 +1,167 @@
+{
+  "nav": {
+    "home": "Home",
+    "library": "Disease Library",
+    "wizard": "Diagnose",
+    "crops": "Crops",
+    "advisory": "Seasonal Advisory",
+    "about": "About"
+  },
+  "brand": {
+    "name": "Kisan Lens",
+    "tagline": "Your crop disease & care companion"
+  },
+  "home": {
+    "heroBadge": "Built for Indian farmers",
+    "heroTitle": "Spot crop diseases early. Protect your harvest.",
+    "heroSubtitle": "Browse 8 major crops and 30+ common diseases. Diagnose in minutes with our symptom wizard — no internet needed after first load.",
+    "heroCta": "Start diagnosis",
+    "heroSecondary": "Browse diseases",
+    "statsCrops": "Major crops",
+    "statsDiseases": "Diseases covered",
+    "statsLanguages": "Languages",
+    "statsFree": "Always free",
+    "featuresTitle": "Everything you need, in one place",
+    "featuresSubtitle": "From diagnosis to harvest — practical guidance designed for Indian farming conditions.",
+    "feature1Title": "Symptom wizard",
+    "feature1Desc": "Answer a few questions about what you see on your plants and get likely disease matches with confidence scores.",
+    "feature2Title": "Treatment guides",
+    "feature2Desc": "Step-by-step organic and chemical treatments, with dosages suited to Indian market products.",
+    "feature3Title": "Seasonal advisory",
+    "feature3Desc": "Month-by-month guidance on what diseases to watch for based on your crop and region.",
+    "feature4Title": "Works offline",
+    "feature4Desc": "Install as an app and use in the field without internet. Built for low-connectivity areas.",
+    "cropsTitle": "Crops we cover",
+    "cropsSubtitle": "Tap a crop to explore its common diseases and management.",
+    "ctaTitle": "Ready to protect your harvest?",
+    "ctaSubtitle": "Start with the diagnosis wizard — most farmers get a clear answer in under 2 minutes.",
+    "ctaButton": "Start diagnosis"
+  },
+  "library": {
+    "title": "Disease Library",
+    "subtitle": "Browse {count} diseases across {crops} major crops. Filter by crop or search by symptom.",
+    "filterAll": "All crops",
+    "searchPlaceholder": "Search by disease or symptom…",
+    "noResults": "No diseases match your search. Try clearing filters.",
+    "severity": "Severity",
+    "symptoms": "Symptoms",
+    "viewDetails": "View details"
+  },
+  "severity": {
+    "low": "Low",
+    "moderate": "Moderate",
+    "high": "High",
+    "severe": "Severe"
+  },
+  "disease": {
+    "symptoms": "Symptoms",
+    "causes": "Causes",
+    "organicTreatment": "Organic treatment",
+    "chemicalTreatment": "Chemical treatment",
+    "prevention": "Prevention",
+    "bestSeason": "Most active season",
+    "affectedCrops": "Affects",
+    "quickId": "Quick ID checklist",
+    "backToLibrary": "Back to library",
+    "relatedDiseases": "Related diseases",
+    "warning": "Always wear gloves and read pesticide labels. Consult your local Krishi Vigyan Kendra for severe outbreaks."
+  },
+  "wizard": {
+    "title": "Disease Diagnosis Wizard",
+    "subtitle": "Answer a few questions — we'll match your crop's symptoms to likely diseases.",
+    "step": "Step {current} of {total}",
+    "next": "Next",
+    "previous": "Back",
+    "restart": "Start over",
+    "selectCrop": "Which crop are you growing?",
+    "selectAffectedPart": "Which part of the plant is affected?",
+    "selectSymptomType": "What do you see?",
+    "selectConditions": "Any of these apply?",
+    "resultTitle": "Likely diseases",
+    "resultSubtitle": "Based on your answers, here are the most probable matches.",
+    "resultMatch": "{percent}% match",
+    "resultEmpty": "We couldn't match your symptoms. Try the disease library or contact your local agricultural officer.",
+    "confidence": "Confidence",
+    "seeDetails": "See full guide"
+  },
+  "symptomTypes": {
+    "spots": "Spots on leaves",
+    "yellowing": "Yellowing / chlorosis",
+    "wilting": "Wilting / drooping",
+    "rot": "Rotting",
+    "powder": "Powdery coating",
+    "pest": "Visible insects / pests",
+    "deformity": "Deformed / stunted growth",
+    "blight": "Blight / dead patches"
+  },
+  "plantParts": {
+    "leaves": "Leaves",
+    "stem": "Stem / stalk",
+    "root": "Roots / base",
+    "fruit": "Fruits / pods",
+    "flower": "Flowers",
+    "whole": "Whole plant"
+  },
+  "conditions": {
+    "wet": "Recent heavy rain / high humidity",
+    "dry": "Dry spell / drought stress",
+    "cold": "Cool weather / fog",
+    "pestsNearby": "Pest outbreak in the area",
+    "monoculture": "Same crop grown last season",
+    "poorDrainage": "Waterlogging / poor drainage"
+  },
+  "crops": {
+    "rice": "Rice",
+    "wheat": "Wheat",
+    "maize": "Maize",
+    "cotton": "Cotton",
+    "sugarcane": "Sugarcane",
+    "tomato": "Tomato",
+    "potato": "Potato",
+    "chili": "Chili"
+  },
+  "advisory": {
+    "title": "Seasonal Advisory",
+    "subtitle": "What to watch for in your fields this month, by crop.",
+    "monthLabel": "Month",
+    "tip": "Tip"
+  },
+  "about": {
+    "title": "About Kisan Lens",
+    "subtitle": "A free, open resource for India's farmers.",
+    "missionTitle": "Our mission",
+    "missionBody": "Indian farmers lose an estimated 15–25% of their crops to pests and diseases every year. Most of these losses are preventable with timely identification and the right treatment. Kisan Lens puts expert knowledge in your pocket — for free, in your language, and works offline.",
+    "disclaimerTitle": "Important disclaimer",
+    "disclaimerBody": "The treatments recommended here are general guidelines. Disease identification is based on a symptom checklist — for accurate diagnosis and pesticide recommendations, consult your local Krishi Vigyan Kendra (KVK) or agricultural extension officer. Always follow product labels when using any pesticide."
+  },
+  "common": {
+    "loading": "Loading…",
+    "error": "Something went wrong",
+    "retry": "Try again",
+    "language": "Language",
+    "english": "English",
+    "hindi": "हिन्दी",
+    "selectLanguage": "Select language",
+    "learnMore": "Learn more",
+    "readMore": "Read more",
+    "months": {
+      "1": "January",
+      "2": "February",
+      "3": "March",
+      "4": "April",
+      "5": "May",
+      "6": "June",
+      "7": "July",
+      "8": "August",
+      "9": "September",
+      "10": "October",
+      "11": "November",
+      "12": "December"
+    }
+  },
+  "footer": {
+    "built": "Built with care for Indian farmers.",
+    "free": "Free & open source.",
+    "copyright": "© {year} Kisan Lens. Information provided as-is; consult your local KVK for diagnosis."
+  }
+}

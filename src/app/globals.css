@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 253 253 249;
+  --foreground: 33 66 37;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-cream-50 text-leaf-900 antialiased;
+  font-feature-settings: 'kern' 1, 'liga' 1;
+  text-rendering: optimizeLegibility;
+}
+
+/* Custom scrollbar — subtle and themed */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: theme('colors.leaf.200');
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: theme('colors.leaf.300');
+}
+
+@layer components {
+  .container-narrow {
+    @apply mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .container-tight {
+    @apply mx-auto w-full max-w-3xl px-4 sm:px-6;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-leaf-500 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-primary {
+    @apply btn bg-leaf-600 text-white shadow-soft hover:bg-leaf-700 hover:shadow-cardHover active:scale-[0.98];
+  }
+
+  .btn-secondary {
+    @apply btn bg-white text-leaf-700 ring-1 ring-leaf-200 hover:bg-leaf-50 hover:ring-leaf-300 active:scale-[0.98];
+  }
+
+  .btn-ghost {
+    @apply btn bg-transparent text-leaf-700 hover:bg-leaf-50 active:scale-[0.98];
+  }
+
+  .chip {
+    @apply inline-flex items-center gap-1.5 rounded-full bg-leaf-100 px-3 py-1 text-xs font-medium text-leaf-800;
+  }
+
+  .chip-warn {
+    @apply inline-flex items-center gap-1.5 rounded-full bg-amber-100 px-3 py-1 text-xs font-medium text-amber-800;
+  }
+
+  .chip-danger {
+    @apply inline-flex items-center gap-1.5 rounded-full bg-red-100 px-3 py-1 text-xs font-medium text-red-800;
+  }
+
+  .card {
+    @apply rounded-2xl bg-white shadow-card ring-1 ring-leaf-100 transition-all duration-300 hover:shadow-cardHover hover:-translate-y-0.5;
+  }
+
+  .card-static {
+    @apply rounded-2xl bg-white shadow-card ring-1 ring-leaf-100;
+  }
+
+  .prose-farmer {
+    @apply text-leaf-800 leading-relaxed;
+  }
+
+  .prose-farmer h2 {
+    @apply text-xl font-bold text-leaf-900 mt-6 mb-2;
+  }
+
+  .prose-farmer h3 {
+    @apply text-lg font-semibold text-leaf-900 mt-4 mb-2;
+  }
+
+  .prose-farmer ul {
+    @apply space-y-1.5 my-3;
+  }
+
+  .prose-farmer li {
+    @apply flex gap-2 before:content-['•'] before:text-leaf-500 before:font-bold;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .gradient-leaf {
+    background: linear-gradient(
+      135deg,
+      theme('colors.leaf.50') 0%,
+      theme('colors.leaf.100') 50%,
+      theme('colors.cream.100') 100%
+    );
+  }
+
+  .gradient-hero {
+    background: radial-gradient(
+        ellipse at top left,
+        theme('colors.leaf.100') 0%,
+        transparent 50%
+      ),
+      radial-gradient(
+        ellipse at bottom right,
+        theme('colors.cream.200') 0%,
+        transparent 50%
+      ),
+      theme('colors.cream.50');
+  }
+}
+
+/* Focus ring polish for keyboard users */
+*:focus-visible {
+  outline: none;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
