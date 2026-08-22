@@ -644,7 +644,7 @@ This allows CropGuard to move beyond **image-based diagnosis** toward **predicti
 
 # 🧠 Learning From Field Confirmations
 
-One of the most important components of CropGuard is the feedback loop.
+One of the most important components of KisanLens is the feedback loop.
 
 ```text
 AI Prediction
