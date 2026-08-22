@@ -709,7 +709,7 @@ KisanLens can measure the following:
 
 ---
 
-# 🧪 Example API Flow
+# 🧪 API Flow
 
 ### Create Crop Scan
 
@@ -747,7 +747,7 @@ POST /api/scans
 
 # 🏆 SIH 2026 Alignment
 
-CropGuard directly addresses the expected outcomes of the problem statement.
+KisanLens directly addresses the expected outcomes of the problem statement.
 
 | SIH Requirement                    | CropGuard Solution                        |
 | ---------------------------------- | ----------------------------------------- |
@@ -772,7 +772,7 @@ CropGuard directly addresses the expected outcomes of the problem statement.
 
 # 🌍 Expected Impact
 
-CropGuard aims to create a shift from:
+KisanLens aims to create a shift from:
 
 ```text
 Reactive Agriculture
