@@ -674,7 +674,7 @@ This enables the system to become increasingly relevant to:
 
 # 📊 Success Metrics
 
-CropGuard can measure the following:
+KisanLens can measure the following:
 
 ### AI Metrics
 
