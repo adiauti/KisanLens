@@ -240,7 +240,7 @@ Expert feedback can be used to improve future predictions and understand model f
 
 # 7. 💊 Integrated Pest Management
 
-Instead of simply recommending pesticides, CropGuard focuses on **Integrated Pest Management (IPM)**.
+Instead of simply recommending pesticides, KisanLens focuses on **Integrated Pest Management (IPM)**.
 
 Recommendations may include:
 
