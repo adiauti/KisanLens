@@ -1,11 +1,5 @@
 import type { Metadata } from "next";
 import { Inter, Fraunces } from "next/font/google";
-import { NextIntlClientProvider } from "next-intl";
-import { getMessages } from "next-intl/server";
-import { notFound } from "next/navigation";
-import { routing } from "@/i18n/routing";
-import { SiteHeader } from "@/components/site-header";
-import { SiteFooter } from "@/components/site-footer";
 import "./globals.css";
 
 const inter = Inter({
@@ -41,33 +35,18 @@ export const metadata: Metadata = {
   },
 };
 
-export function generateStaticParams() {
-  return routing.locales.map((locale) => ({ locale }));
-}
-
-export default async function RootLayout({
+export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  const messages = await getMessages();
-
   return (
     <html
-      lang={routing.defaultLocale}
+      lang="en"
       className={`${inter.variable} ${fraunces.variable}`}
       suppressHydrationWarning
     >
-      <body className="min-h-screen flex flex-col">
-        <NextIntlClientProvider
-          messages={messages}
-          locale={routing.defaultLocale}
-        >
-          <SiteHeader />
-          <main className="flex-1">{children}</main>
-          <SiteFooter />
-        </NextIntlClientProvider>
-      </body>
+      <body className="min-h-screen flex flex-col">{children}</body>
     </html>
   );
 }

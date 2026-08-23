@@ -1,13 +1,17 @@
-import type { Metadata } from 'next';
-import { notFound } from 'next/navigation';
-import { routing } from '@/i18n/routing';
+import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages, unstable_setRequestLocale } from "next-intl/server";
+import { routing } from "@/i18n/routing";
+import { SiteHeader } from "@/components/site-header";
+import { SiteFooter } from "@/components/site-footer";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
 export const metadata: Metadata = {
-  title: 'Kisan Lens',
+  title: "Kisan Lens",
 };
 
 export default async function LocaleLayout({
@@ -23,5 +27,14 @@ export default async function LocaleLayout({
     notFound();
   }
 
-  return <>{children}</>;
+  unstable_setRequestLocale(locale);
+  const messages = await getMessages({ locale });
+
+  return (
+    <NextIntlClientProvider locale={locale} messages={messages}>
+      <SiteHeader />
+      <main className="flex-1">{children}</main>
+      <SiteFooter />
+    </NextIntlClientProvider>
+  );
 }
