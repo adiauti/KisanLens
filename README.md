@@ -734,6 +734,33 @@ POST /api/scans
 
 ### Response
 
+---
+
+## Deployment (Vercel)
+
+Recommended: deploy to Vercel for seamless Next.js support.
+
+Web method:
+
+1. Sign in to https://vercel.com with GitHub.
+2. Import the repository `pw-codes/KisanLens` and select the `main` branch.
+3. Set Environment Variables in the Project Settings (use values from `.env.example`).
+4. Vercel auto-detects Next.js; build command: `npm run build`.
+
+CLI method (optional):
+
+```bash
+npx vercel login
+npx vercel --prod
+```
+
+Files added to help deployment:
+
+- `.env.example` — template for environment variables.
+- `vercel.json` — references project secrets for Vercel deployment.
+
+If you want, I can: connect the GitHub repo in Vercel, add the environment variables, and trigger the first deploy.
+
 ```json
 {
   "disease": "Brown Spot",
