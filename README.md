@@ -15,15 +15,15 @@ Farmers often identify crop diseases and pest infestations only after visible da
 
 Traditional diagnosis can be slow because:
 
-* Extension workers have to cover large geographical areas.
-* Laboratory diagnosis is not always immediately accessible.
-* Farmers may not have access to agricultural experts.
-* Weather conditions strongly influence disease and pest outbreaks.
-* Crop stage, variety, soil condition, and local pest history are often not considered together.
-* Incorrect diagnosis can result in delayed treatment.
-* Unnecessary or inappropriate pesticide usage increases cultivation costs and residue concerns.
-* Lack of continuous monitoring makes early intervention difficult.
-* Agriculture officials often lack real-time, localized crop-health surveillance.
+- Extension workers have to cover large geographical areas.
+- Laboratory diagnosis is not always immediately accessible.
+- Farmers may not have access to agricultural experts.
+- Weather conditions strongly influence disease and pest outbreaks.
+- Crop stage, variety, soil condition, and local pest history are often not considered together.
+- Incorrect diagnosis can result in delayed treatment.
+- Unnecessary or inappropriate pesticide usage increases cultivation costs and residue concerns.
+- Lack of continuous monitoring makes early intervention difficult.
+- Agriculture officials often lack real-time, localized crop-health surveillance.
 
 ### 🎯 Core Challenge
 
@@ -61,10 +61,10 @@ The KisanLens interface is designed around a simple principle:
 | Module                   | Purpose                                            |
 | ------------------------ | -------------------------------------------------- |
 | 🤖 AI Disease Detection  | Identify probable crop diseases from images        |
-| 🌦️ Weather Risk         | Predict disease/pest risk using weather conditions |
+| 🌦️ Weather Risk          | Predict disease/pest risk using weather conditions |
 | 🌾 Crop Intelligence     | Combine crop, age, stage and location              |
-| 🗺️ Disease Risk Map     | Visualize regional disease hotspots                |
-| 🧑‍🔬 Expert Validation  | Allow experts to confirm or correct predictions    |
+| 🗺️ Disease Risk Map      | Visualize regional disease hotspots                |
+| 🧑‍🔬 Expert Validation     | Allow experts to confirm or correct predictions    |
 | 💊 Smart Management      | Provide IPM and treatment recommendations          |
 | 📡 Sensor / Trap Inputs  | Support pest traps and field sensors               |
 | 🌐 Multilingual Advisory | Deliver farmer-friendly local-language guidance    |
@@ -82,12 +82,12 @@ Farmers can upload a clear image of an affected portion of a crop.
 
 The system analyzes:
 
-* Leaf symptoms
-* Spots and lesions
-* Color changes
-* Texture
-* Visible pest damage
-* Disease-specific visual patterns
+- Leaf symptoms
+- Spots and lesions
+- Color changes
+- Texture
+- Visible pest damage
+- Disease-specific visual patterns
 
 The result provides:
 
@@ -116,6 +116,10 @@ Symptoms:
 
 > AI predictions are intended as decision-support and should be referred to an agricultural expert/laboratory when confidence is low or the case is critical.
 
+## Environment
+
+To enable server-side AI vision scanning you can set `ANTHROPIC_API_KEY` in a `.env` file. See `.env.example` for a template. If the key is not provided the app will fall back to local heuristics for risk and management plan generation.
+
 ---
 
 # 2. 🌦️ Weather-Based Disease Forecasting
@@ -124,14 +128,14 @@ KisanLens combines weather information with crop and disease data.
 
 Potential inputs include:
 
-* Temperature
-* Humidity
-* Rainfall
-* Wind conditions
-* Weather history
-* Forecast data
-* Crop stage
-* Location
+- Temperature
+- Humidity
+- Rainfall
+- Wind conditions
+- Weather history
+- Forecast data
+- Crop stage
+- Location
 
 Example:
 
@@ -162,13 +166,13 @@ Risk levels can include:
 
 The map can be generated using:
 
-* Farmer reports
-* AI detections
-* Confirmed field cases
-* Weather conditions
-* Crop distribution
-* Historical disease data
-* Pest-trap/sensor observations
+- Farmer reports
+- AI detections
+- Confirmed field cases
+- Weather conditions
+- Crop distribution
+- Historical disease data
+- Pest-trap/sensor observations
 
 This helps authorities identify **emerging hotspots and prioritize field visits**.
 
@@ -195,12 +199,12 @@ The platform combines this information with AI and environmental data to improve
 
 KisanLens can support future integration with:
 
-* IoT weather sensors
-* Soil sensors
-* Pest traps
-* Smart pheromone traps
-* Field monitoring devices
-* Manual pest observations
+- IoT weather sensors
+- Soil sensors
+- Pest traps
+- Smart pheromone traps
+- Field monitoring devices
+- Manual pest observations
 
 Sensor data can be connected to the backend and used for localized risk forecasting.
 
@@ -246,35 +250,35 @@ Recommendations may include:
 
 ### Immediate Actions
 
-* Remove severely infected plant parts.
-* Improve field drainage.
-* Avoid water logging.
-* Maintain appropriate plant spacing.
-* Remove heavily infected debris.
+- Remove severely infected plant parts.
+- Improve field drainage.
+- Avoid water logging.
+- Maintain appropriate plant spacing.
+- Remove heavily infected debris.
 
 ### Cultural Management
 
-* Crop sanitation
-* Crop rotation
-* Proper irrigation
-* Resistant varieties
-* Field hygiene
+- Crop sanitation
+- Crop rotation
+- Proper irrigation
+- Resistant varieties
+- Field hygiene
 
 ### Biological Management
 
-* Beneficial organisms
-* Biological control methods
-* Natural pest management
+- Beneficial organisms
+- Biological control methods
+- Natural pest management
 
 ### Chemical Management
 
 Where appropriate, the platform can provide:
 
-* Approved treatment categories
-* Safe-use guidance
-* Application precautions
-* Waiting-period information
-* Referral to local agricultural authorities
+- Approved treatment categories
+- Safe-use guidance
+- Application precautions
+- Waiting-period information
+- Referral to local agricultural authorities
 
 The system should avoid encouraging unnecessary pesticide use.
 
@@ -286,16 +290,16 @@ KisanLens is designed for India's diverse agricultural communities.
 
 The platform can support:
 
-* English
-* Hindi
-* Marathi
-* Odia
-* Telugu
-* Tamil
-* Bengali
-* Kannada
-* Gujarati
-* Other regional languages
+- English
+- Hindi
+- Marathi
+- Odia
+- Telugu
+- Tamil
+- Bengali
+- Kannada
+- Gujarati
+- Other regional languages
 
 The goal is to provide **simple, actionable advisories rather than highly technical agricultural terminology**.
 
@@ -324,17 +328,17 @@ KisanLens can provide a dedicated dashboard for agriculture departments.
 
 Officials can monitor:
 
-* Total reported cases
-* Confirmed disease cases
-* Disease distribution
-* Crop-wise disease statistics
-* High-risk regions
-* Emerging hotspots
-* Weather-driven alerts
-* Expert verification status
-* Treatment outcomes
-* Field visits
-* Historical disease trends
+- Total reported cases
+- Confirmed disease cases
+- Disease distribution
+- Crop-wise disease statistics
+- High-risk regions
+- Emerging hotspots
+- Weather-driven alerts
+- Expert verification status
+- Treatment outcomes
+- Field visits
+- Historical disease trends
 
 This enables **data-driven agricultural surveillance and faster extension response**.
 
@@ -397,13 +401,13 @@ This enables **data-driven agricultural surveillance and faster extension respon
 
 ## Frontend
 
-* **Next.js / React**
-* **TypeScript**
-* **Tailwind CSS**
-* Responsive UI
-* Progressive Web App support
-* Interactive maps
-* Multilingual UI
+- **Next.js / React**
+- **TypeScript**
+- **Tailwind CSS**
+- Responsive UI
+- Progressive Web App support
+- Interactive maps
+- Multilingual UI
 
 ## Backend
 
@@ -413,23 +417,23 @@ KisanLens uses **Supabase as the primary backend platform**.
 
 Supabase services:
 
-* PostgreSQL Database
-* Authentication
-* Storage
-* Row Level Security
-* Realtime
-* Edge Functions
+- PostgreSQL Database
+- Authentication
+- Storage
+- Row Level Security
+- Realtime
+- Edge Functions
 
 ## AI / ML
 
 Possible architecture:
 
-* Python
-* PyTorch / TensorFlow
-* CNN / Vision Transformer models
-* Image classification
-* Image preprocessing
-* Disease-specific classification models
+- Python
+- PyTorch / TensorFlow
+- CNN / Vision Transformer models
+- Image classification
+- Image preprocessing
+- Disease-specific classification models
 
 The AI layer can be deployed independently and accessed through an API or Supabase Edge Function.
 
@@ -437,16 +441,14 @@ The AI layer can be deployed independently and accessed through an API or Supaba
 
 Potential integrations:
 
-* Weather API
-* Geolocation API
-* Map/GIS provider
-* Government agricultural datasets
-* Pest/disease datasets
-* IoT sensor gateways
+- Weather API
+- Geolocation API
+- Map/GIS provider
+- Government agricultural datasets
+- Pest/disease datasets
+- IoT sensor gateways
 
 ---
-
-
 
 # 📸 Scan Workflow
 
@@ -500,16 +502,16 @@ The interface is designed specifically for farmers and extension workers.
 
 ### Design Principles
 
-* Simple navigation
-* Large touch-friendly buttons
-* Minimal technical terminology
-* Clear disease severity indicators
-* Visual risk indicators
-* Mobile-first design
-* Regional language support
-* Fast image-upload workflow
-* Accessible color and typography
-* Clear next actions
+- Simple navigation
+- Large touch-friendly buttons
+- Minimal technical terminology
+- Clear disease severity indicators
+- Visual risk indicators
+- Mobile-first design
+- Regional language support
+- Fast image-upload workflow
+- Accessible color and typography
+- Clear next actions
 
 ### Main Screens
 
@@ -664,11 +666,11 @@ Improved Future Predictions
 
 This enables the system to become increasingly relevant to:
 
-* Local crops
-* Local varieties
-* Regional climate
-* Local disease patterns
-* Indian agricultural conditions
+- Local crops
+- Local varieties
+- Regional climate
+- Local disease patterns
+- Indian agricultural conditions
 
 ---
 
@@ -678,32 +680,32 @@ KisanLens can measure the following:
 
 ### AI Metrics
 
-* Accuracy
-* Precision
-* Recall
-* F1 Score
-* Confusion Matrix
-* Top-1 / Top-3 accuracy
-* Confidence calibration
+- Accuracy
+- Precision
+- Recall
+- F1 Score
+- Confusion Matrix
+- Top-1 / Top-3 accuracy
+- Confidence calibration
 
 ### Platform Metrics
 
-* Number of scans
-* Number of active farmers
-* Number of detected diseases
-* Expert validation rate
-* Average response time
-* Referral rate
-* Follow-up completion rate
+- Number of scans
+- Number of active farmers
+- Number of detected diseases
+- Expert validation rate
+- Average response time
+- Referral rate
+- Follow-up completion rate
 
 ### Agricultural Impact
 
-* Earlier disease detection
-* Reduced crop loss
-* Reduced unnecessary pesticide usage
-* Faster extension response
-* Increased surveillance coverage
-* Improved preventive intervention planning
+- Earlier disease detection
+- Reduced crop loss
+- Reduced unnecessary pesticide usage
+- Faster extension response
+- Increased surveillance coverage
+- Improved preventive intervention planning
 
 ---
 
@@ -823,23 +825,22 @@ Follow-up Monitoring
 
 Potential future improvements include:
 
-* Satellite-based crop-health monitoring
-* Drone imagery
-* Offline-first diagnosis
-* Voice-based farmer assistant
-* WhatsApp/SMS alerts
-* IoT soil sensors
-* Smart pest traps
-* Government agricultural-data integration
-* Disease outbreak prediction
-* Regional disease forecasting
-* Computer-vision severity estimation
-* Automatic crop-stage detection
-* AI-powered agricultural voice assistant
-* Personalized farm-health scores
+- Satellite-based crop-health monitoring
+- Drone imagery
+- Offline-first diagnosis
+- Voice-based farmer assistant
+- WhatsApp/SMS alerts
+- IoT soil sensors
+- Smart pest traps
+- Government agricultural-data integration
+- Disease outbreak prediction
+- Regional disease forecasting
+- Computer-vision severity estimation
+- Automatic crop-stage detection
+- AI-powered agricultural voice assistant
+- Personalized farm-health scores
 
 ---
-
 
 # ⚠️ Responsible AI & Safety
 
@@ -847,12 +848,12 @@ KisanLens is designed as a **decision-support system**, not a replacement for ag
 
 AI predictions can be incorrect because of:
 
-* Poor image quality
-* Unseen diseases
-* Similar-looking symptoms
-* Environmental variations
-* Regional crop differences
-* Insufficient training data
+- Poor image quality
+- Unseen diseases
+- Similar-looking symptoms
+- Environmental variations
+- Regional crop differences
+- Insufficient training data
 
 Low-confidence, severe, unusual, or potentially high-impact cases should be **referred to agricultural experts or laboratories**.
 
@@ -863,7 +864,6 @@ Treatment recommendations should follow applicable agricultural regulations, app
 # 📄 License
 
 This project is being developed for **Smart India Hackathon 2026**.
-
 
 ---
 
